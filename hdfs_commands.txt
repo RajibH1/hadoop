@@ -1,0 +1,13 @@
+# In hdfs file sysytem / is the root
+# Command to check the fjiles inside root hdfs directory 
+hadoop fs -ls / 
+
+# command to create directory in the hdfs 
+hadoo- fs mkdir /input_data
+
+
+# copy data from local file system to HDFS 
+hadoop fs -put test_demo/trees.csv /input_data
+
+# Copy from Hdfs path to local system 
+hadoop fs -copyToLocal /input_data/trees.csv ./
